@@ -37,7 +37,7 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              "light-green": "#ABEF5F",
             },
           },
         },
@@ -51,9 +51,59 @@
         font-family: "Manrope", sans-serif;
       }
     </style>
-
   </head>
-  <body>
-    <h1 class="text-red-700 text-4xl font-manrope">Welcome to Assignment 3</h1>
+  <body class="w-11/12 container mx-auto flex flex-col font-manrope mt-5">
+    <!-- Header Section Starts -->
+    <!-- This Section Contains Nav Bar and Banner Part -->
+    <header>
+      <!-- Nav Bar Section Starts -->
+      <nav>
+        <div class="flex items-center justify-around">
+          <div class="flex gap-2 items-center">
+            <div
+              class="bg-light-green rounded-full p-2 w-8 h-8 flex justify-center"
+            >
+              <i class="fa-solid fa-arrow-right fa-spin"></i>
+            </div>
+            <h1 class="text-4xl font-extrabold">Rinterio</h1>
+          </div>
+          <div>
+            <ul
+              class="hidden lg:flex lg:gap-5 justify-around text-sm font-bold"
+            >
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#contact_us">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="hidden lg:flex gap-4 justify-center items-center">
+            <div
+              class="bg-slate-200 rounded-full p-2 w-8 h-8 flex justify-center"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div
+              class="bg-slate-200 rounded-full p-2 w-8 h-8 flex justify-center"
+            >
+              <i class="fa-solid fa-cart-plus"></i>
+            </div>
+            <button
+              class="flex gap-2 bg-light-green pt-2 pb-2 pr-5 pl-5 rounded-3xl text-lg font-bold"
+            >
+              Book Consult
+              <div
+                class="bg-slate-950 rounded-full p-2 w-8 h-8 flex justify-center"
+              >
+                <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Nav Bar Section Ends -->
+    </header>
+    <!-- Header Section Ends -->
   </body>
 </html>
