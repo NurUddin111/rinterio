@@ -53,13 +53,11 @@
     </style>
   </head>
   <body class="w-11/12 container mx-auto flex flex-col font-manrope mt-5">
-
     <!-- Header Section Starts -->
 
     <!-- This Section Contains Nav Bar and Banner Part -->
 
     <header>
-
       <!-- Nav Bar Section Starts -->
 
       <nav>
@@ -72,14 +70,14 @@
             >
               <i class="fa-solid fa-arrow-right fa-spin"></i>
             </div>
-            <h1 class="text-4xl font-extrabold">Rinterio</h1>
+            <h1 class="text-3xl lg:text-4xl font-extrabold">Rinterio</h1>
           </div>
 
           <!-- Dashboard -->
 
           <div>
             <ul
-              class="hidden lg:flex lg:gap-5 justify-around text-sm font-bold"
+              class="hidden lg:flex lg:gap-16 justify-around text-sm font-bold"
             >
               <li><a href="#home">Home</a></li>
               <li><a href="#services">Services</a></li>
@@ -92,22 +90,26 @@
           <!-- Search,Cart Icon and Button -->
 
           <div class="hidden lg:flex gap-4 justify-center items-center">
-            <div
-              class="bg-slate-200 rounded-full p-2 w-8 h-8 flex justify-center"
-            >
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div
-              class="bg-slate-200 rounded-full p-2 w-8 h-8 flex justify-center"
-            >
-              <i class="fa-solid fa-cart-plus"></i>
-            </div>
+            <a href="#search">
+              <div
+                class="bg-slate-200 rounded-full p-2 w-8 h-8 flex justify-center"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </a>
+            <a href="#add_to_cart">
+              <div
+                class="bg-slate-200 rounded-full p-2 w-8 h-8 flex justify-center"
+              >
+                <i class="fa-solid fa-cart-plus"></i>
+              </div>
+            </a>
             <button
               class="flex gap-2 bg-light-green pt-2 pb-2 pr-5 pl-5 rounded-3xl text-lg font-bold"
             >
               Book Consult
               <div
-                class="bg-slate-950 rounded-full p-2 w-8 h-8 flex justify-center"
+                class="bg-slate-950 rounded-full p-2 w-8 h-8 flex justify-center -rotate-45"
               >
                 <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
               </div>
@@ -120,20 +122,47 @@
           >
             <i class="fa-solid fa-bars"></i>
           </div>
-
         </div>
-
       </nav>
 
       <!-- Nav Bar Section Ends -->
 
       <!-- Banner Section Starts -->
-       <section></section>
-      <!-- Banner Section Ends -->
 
+      <section>
+        <div class="space-y-4">
+          <div class="flex justify-center">
+            <img src="assets/banner.png" alt="" />
+          </div>
+          <div class="text-center space-y-4">
+            <h1 class="text-3xl lg:text-7xl font-extrabold">
+              A barn house of this design has a striking appearance
+            </h1>
+            <p class="text-xs lg:text-lg">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents, and large windows that flood the space with natural
+              light.
+            </p>
+          </div>
+          <div class="lg:flex lg:justify-center">
+            <div
+              class="flex gap-5 justify-center items-center bg-light-green bg-opacity-60 rounded-3xl pt-2 pb-2 pr-5 pl-5 lg:w-max"
+            >
+              <button class="text-lg font-bold">View Details</button>
+              <div
+                class="bg-light-green rounded-full p-2 w-8 h-8 flex justify-center -rotate-45"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Banner Section Ends -->
     </header>
 
     <!-- Header Section Ends -->
-     
   </body>
 </html>
